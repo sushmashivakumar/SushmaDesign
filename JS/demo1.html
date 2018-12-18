@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <form method="post" action="Welcome.html" onsubmit="return validationform()">
+        <label>Enter Password: </label>
+        <input type="password" id="password"><br><br>
+        <label>Re-enter Password: </label>
+        <input type="password" id="password1"><br><br>
+        <button type="submit">Submit</button>  
+    </form>
+    <script>
+        function matchpass(){
+            var firstpassword=document.f1.password.value;
+            var secondpassword=document.f1.password2.value;
+        if(firstpassword == null || firstpassword == ""){
+            alert("Enter password");
+            return false;
+        }else if(firstpassword == secondpassword){
+            return true;
+        }else{
+            alert("password must be same");
+            return false;
+        }
+            
+            
+            
+        }
+    
+    
+    </script>
+</body>
+</html>

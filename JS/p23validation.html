@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validation</title>
+</head>
+<body>
+  
+   <form method="post" action="Welcome.html" onsubmit="return validation()">
+       <label>Name: </label>
+       <input type="text" id="sushma"><br><br>
+       <label>Password: </label>
+       <input type="password" id="password"><br><br>
+       <button type="submit">Register</button>  
+   </form>
+   
+    <script>
+        function validation(){
+            var name = document.getElementById("sushma").value;
+            var password = document.getElementById("password").value;
+            /*alert(password.length);*/
+            /*alert(name);*/
+            if (name == null || name == "") {
+                alert("Name can't be blank");
+                return false;
+            } else if(password.length<6) {
+                alert("Password must be atleast 6 characters");
+                return false;
+            }  
+        }
+    </script> 
+</body>
+</html>

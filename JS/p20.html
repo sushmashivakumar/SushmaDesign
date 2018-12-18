@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <form name=form1>
+       <label>Enter Name:</label>
+       <input type="text" name="firstName">
+       <input type="text" name="lastName">
+       <input type="button" onclick="printvalue()" value="Print name">  
+   </form>
+   <script>
+        function printvalue(){
+            var name=document.form1.firstName.value;
+            var lastName=document.form1.lastName.value;
+            alert("Your First Name is: "+ name +" and Last Name is: "+lastName);
+        }
+    </script>  
+</body>
+</html>

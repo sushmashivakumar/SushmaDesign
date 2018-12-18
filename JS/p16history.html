@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>History</title>
+</head>
+
+<body>
+    <button type="button" onclick="urlFun();">URL Length</button>
+    <p id="url"></p>
+    <a href="demo.html">Click for demo page</a>
+    <button type="button" onclick="urlForward();">URL Forward</button>
+    <p id="forward"></p>
+    
+    
+    
+    
+    <script>
+        function urlFun(){
+            document.getElementById("url").innerHTML = history.length;
+        }
+        
+        function urlForward(){
+            history.forward();
+        }
+        
+    
+    </script>
+
+
+</body>
+
+</html>

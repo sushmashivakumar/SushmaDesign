@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Count of p tags</title>
+</head>
+<body>
+   <p>This is paragraph</p>
+   <p>Here we are going to count total number of paragraphs by getElementByTagName() method.</p>
+   <p>Let's see the simple example</p>
+   <button onclick="countpara()">Count Paragraph</button>
+   <script>
+    function countpara(){
+        var totalpara = document.getElementsByTagName("p");
+        /*alert("Total p tags are: " +totalpara.length);*/
+        document.getElementById("result").innerHTML+=totalpara.length;
+    }
+       
+    </script>
+    <p id="result">Total p tags are:</p>   
+</body>
+</html>

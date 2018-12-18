@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       var myWindow;
+       
+       function openWin1() {
+           myWindow = open("http://www.facebook.com");
+       }
+       
+       function closeWin() {
+           
+           setInterval(function(){
+               myWindow.close();
+           },5000);
+       }
+       
+       function openWin(){
+           var myWindow = open("http://www.google.com");
+           myWindow.opener.document.getElementById("demo").innerHTML = "A new window has been opened."
+       }
+       closeWin();
+        
+</script>
+   
+   <input type="button" value="Open" onclick="openWin1()"/>
+   <input type="button" value="Close" onclick="closeWin()"/>
+   <button onclick="openWin()">Open myWindow</button>
+   <p id="demo"></p>
+    
+</body>
+</html>

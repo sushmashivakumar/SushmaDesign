@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myform" action="Welcome.html" onsubmit="return validate()">
+        <label>Number: </label>
+        <input type="text" name="num">
+        <div id="numloc"></div>
+        <input type="submit" value="submit">
+    </form>
+    <script>
+        function validate(){
+            var num=document.myform.num.value;
+            if(num==null || num==""){
+                alert("Enter phone number");
+                return false;
+            }
+            else if(isNaN(num))
+                {
+                    document.getElementById("numloc").innerHTML="<span style='color:red;'>Enter Numeric value only</span>"
+                    return false;
+                }
+            else
+                {
+                    return true;
+                }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <center>
+        <h2>Comments..!</h2>
+        <hr>
+    </center>
+    <p id="comment"></p>
+    <hr>
+    <center>
+        <h2>Condition Statements..!</h2>
+        <hr>
+    </center>
+    <ul>
+        <li>Simple If</li>
+        <li>If else</li>
+        <li>If else ladder</li>
+        <li>switch case</li>
+    </ul>
+    <h2>Simple If statement example..!</h2>
+    <p id="simpleif"></p>
+
+    <h3>If Else statement Example..!</h3>
+    <table border="1">
+        <tr>
+            <td><label>Enter First Number</label></td>
+            <td><input type="number" id="firstNumber"></td>
+        </tr>
+        <tr>
+            <td><label>Enter Last Number</label></td>
+            <td><input type="number" id="lastNumber"></td>
+        </tr>
+
+        <tr>
+            <td><button type="button" onclick="IfElse();">Click for If Else Result</button></td>
+            <td><b>Result is :</b><p id="ifelse"></p></td>
+        </tr>
+    </table>
+    
+    <!--If Else Ladder Example-->
+    
+    <h3>If Else Ladder Example..!</h3>
+    <table border="1">
+        <tr>
+            <td><label>Enter First Number</label></td>
+            <td><input type="number" id="firstNumber1"></td>
+        </tr>
+        <tr>
+            <td><label>Enter Last Number</label></td>
+            <td><input type="number" id="lastNumber1"></td>
+        </tr>
+
+        <tr>
+            <td><button type="button" onclick="IfElseLadder();">If Else Ladder Example</button></td>
+            <td><b>Result is :</b><p id="ifelseladder"></p></td>
+        </tr>
+    </table>
+    
+    <!--Switch Case-->
+    
+    <h3>Switch Case Example..!</h3>
+    <label>Enter Number :</label>
+    <input type="number" id="switchnumber">
+    <button type="button" onclick="switchFun();">Click for Switch Case..!</button>
+    <h4 id="switchresult"></h4>
+    <hr>
+    
+    <!--Loop Statements-->
+    <center><h2>Loop Statements or Iterators..!</h2></center>
+    <hr>
+    <ul>
+        <li>For Loop</li>
+        <li>While Loop</li>
+        <li>do While Loop</li>
+    </ul>
+    <label>Enter Number :</label>
+    <input type="number" id="loop">
+    <b>Result :</b><p id="loopresult"></p>
+    <button type="button" onclick="forFun();">Click for For Loop</button>
+    <button type="button" onclick="whileFun();">Click for While Loop</button>
+    <button type="button" onclick="doWhileFun();">Click for do While Loop</button>
+    <b>Result :</b><p id="loopResult"></p>
+    <script src="assets/js/javascript.js"></script>
+</body>
+</html>

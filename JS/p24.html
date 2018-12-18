@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Re-enter</title>
+</head>
+<body>
+    <form method="post" name="f1" action="Welcome.html" onsubmit="return validationform()">
+        <label>Enter Password: </label>
+        <input type="password" id="password" name="password"><br><br>
+        <label>Re-enter Password: </label>
+        <input type="password" id="password1" name="password1"><br><br>
+        <button type="submit">Submit</button>  
+    </form>
+    <script>
+        function validationform()
+        {
+            /*alert("Hi");
+            var firstpassword = document.getElementById("password").value;
+            alert(firstpassword);
+            var secondpassword = document.getElementById("password1").value;*/
+            var firstpassword=document.f1.password.value;
+            var secondpassword=document.f1.password1.value;
+            
+            if(firstpassword == null || firstpassword == ""){
+                alert("Please enter password");
+                return false;
+            }else if(secondpassword == null || secondpassword == ""){
+                alert("Please re-enter password");
+                return false;
+            
+            }else if(firstpassword != secondpassword){
+                alert("Password must be same");
+                return false;
+            }
+            else (firstpassword == secondpassword)
+                return true;  
+            
+            
+        }
+    </script>
+</body>
+</html>

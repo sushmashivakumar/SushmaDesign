@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Content</title>
+</head>
+<body>
+   <h1>Accessing a Text Field</h1>
+   
+   <input type="text" id="view"><br><br>
+   <input type="button" onclick="viewContent();" value="View Text Content">
+   <script>
+        function viewContent(){
+            document.getElementById('content').innerHTML=document.getElementById('view').value
+        }
+    </script>
+    <p id="content"></p>
+</body>
+</html>
